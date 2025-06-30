@@ -81,7 +81,7 @@ function SearchFilter() {
                 <p className="ciudad">{prop.ciudad}</p>
                 <span className="canon">{prop.canon}</span>
               </div>
-
+              <p className="direccion">{prop.direccion}</p>
               <button
                 onClick={() => toggleDetalle(prop.id)}
                 className="btn-detalle"
