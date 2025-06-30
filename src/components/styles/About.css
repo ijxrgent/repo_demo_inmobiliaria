@@ -79,8 +79,51 @@
   color: #468747;
 }
 
+/* ===== [SOLO PARA MÓVILES < 768px] ===== */
 @media (max-width: 768px) {
+  .about-us {
+    padding: 30px 15px !important;
+    background-attachment: scroll !important; /* Mejor rendimiento en móviles */
+  }
+
+  .about-us h2 {
+    width: 90% !important; /* Ocupa casi todo el ancho */
+    font-size: 1.5rem !important; /* Tamaño más adecuado */
+    padding: 10px !important;
+    margin-bottom: 30px !important;
+  }
+
   .our-info-grid {
-    grid-template-columns: 1fr;
+    gap: 20px !important; /* Menor separación entre secciones */
+  }
+
+  .our-info-section {
+    padding: 15px !important;
+  }
+
+  .our-info-section h3 {
+    font-size: 1.1rem !important; /* Títulos más compactos */
+    flex-wrap: wrap; /* Para evitar desbordamiento */
+  }
+
+  .our-info-section strong,
+  .our-info-section ul {
+    font-size: 0.9rem !important; /* Texto más legible */
+  }
+
+  .icono-section {
+    font-size: 1.2rem !important; /* Iconos proporcionales */
+  }
+}
+
+/* ===== [MÓVILES MUY PEQUEÑOS < 400px] ===== */
+@media (max-width: 400px) {
+  .about-us h2 {
+    font-size: 1.3rem !important;
+    width: 95% !important;
+  }
+
+  .our-info-section {
+    padding: 12px !important;
   }
 }

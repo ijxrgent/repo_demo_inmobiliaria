@@ -39,3 +39,37 @@
 .iconos-sociales a:hover {
   color: #508150;
 }
+
+/* Solo ajustes de tamaño para móviles */
+@media (max-width: 768px) {
+  .titulo-inmobiliaria {
+    font-size: 28px;
+  }
+  .nombre-empresa {
+    font-size: 32px;
+  }
+  .mensaje-servicio {
+    font-size: 20px;
+  }
+  .iconos-sociales {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-inmobiliaria {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+  .nombre-empresa {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  .mensaje-servicio {
+    font-size: 16px;
+  }
+  .iconos-sociales {
+    font-size: 18px;
+    gap: 15px;
+  }
+}

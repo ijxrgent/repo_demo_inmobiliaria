@@ -204,3 +204,82 @@
   font-size: 16px;
   margin-top: 30px;
 }
+
+/* ===== [SOLO PARA PANTALLAS PEQUEÑAS < 768px] ===== */
+@media (max-width: 768px) {
+  .search-container {
+    padding: 20px 15px !important; /* Reducir padding */
+    margin-top: 20px !important;
+  }
+
+  .search-title {
+    width: 100% !important; /* Ocupar todo el ancho */
+    font-size: 20px !important;
+    padding: 12px 15px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .search-input {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 10px 12px !important;
+    font-size: 14px !important;
+  }
+
+  /* Carrusel full-width */
+  .carrusel-container {
+    width: 100vw !important;
+    margin-left: -15px !important; /* Compensar padding */
+  }
+
+  .carrusel {
+    gap: 10px !important;
+    padding: 10px 15px !important; /* Scroll táctil */
+  }
+
+  /* Cards optimizadas para móvil */
+  .card-propiedad {
+    min-width: 85vw !important; /* 85% del ancho de pantalla */
+    max-width: 85vw !important;
+    height: auto !important;
+    min-height: 380px !important;
+    padding: 12px !important;
+  }
+
+  .img-propiedad {
+    height: 140px !important;
+  }
+
+  /* Ocultar flechas de navegación en móvil */
+  .btn-carrusel {
+    display: none !important;
+  }
+
+  /* Ajustes de tipografía */
+  .card-propiedad h3 {
+    font-size: 16px !important;
+  }
+
+  .iconos,
+  .info-ciudad-canon {
+    font-size: 13px !important;
+  }
+
+  .btn-detalle {
+    padding: 8px 10px !important;
+    font-size: 13px !important;
+  }
+}
+
+/* ===== [AJUSTES EXTRA PARA MÓVILES MUY PEQUEÑOS < 400px] ===== */
+@media (max-width: 400px) {
+  .card-propiedad {
+    min-width: 90vw !important;
+    max-width: 90vw !important;
+    min-height: 350px !important;
+  }
+
+  .img-propiedad {
+    height: 120px !important;
+  }
+}

@@ -21,3 +21,11 @@
 .whatsapp-btn:hover {
   transform: scale(1.1);
 }
+
+/* === [SOLO CAMBIOS PARA MÓVILES < 768px] === */
+@media (max-width: 768px) {
+  .whatsapp-btn {
+    right: 10px;
+    bottom: 20px;
+  }
+}

@@ -200,6 +200,11 @@
 }
 
 @media (max-width: 992px) {
+  .consigne-container {
+    margin-top: 100px; /* Ajusta este valor según la altura de tu header */
+    margin-bottom: 30px;
+  }
+
   .two-columns-layout {
     flex-direction: column;
   }

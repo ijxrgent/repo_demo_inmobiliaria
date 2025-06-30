@@ -49,3 +49,51 @@
   margin-top: auto;
   height: 80px;
 }
+
+/* ===== RESPONSIVE PARA MÓVILES ===== */
+@media (max-width: 768px) {
+  .footer-container {
+    height: auto;
+    padding-top: 20px;
+  }
+
+  .location {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .location-btn {
+    margin-bottom: 5px;
+  }
+
+  .location-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .location-text p {
+    font-size: 14px; /* Texto más pequeño */
+  }
+
+  .map-location iframe {
+    width: 95%; /* Ocupa casi todo el ancho */
+    height: 200px; /* Altura reducida */
+  }
+
+  .footer p {
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+}
+
+/* ===== MÓVILES MUY PEQUEÑOS ===== */
+@media (max-width: 480px) {
+  .map-location iframe {
+    height: 180px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+}

@@ -104,9 +104,14 @@
 }
 
 @media (max-width: 480px) {
+  .menu-header {
+    border-radius: 0 !important;
+  }
+
   .contact-form-container {
-    padding: 1.5rem;
-    width: 90%;
+    margin-top: 130px; /* Ajusta este valor según la altura de tu header */
+    margin-bottom: 30px;
+    width: 95%;
   }
 
   .form-title {
