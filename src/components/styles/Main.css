@@ -42,6 +42,9 @@
 
 /* Solo ajustes de tamaño para móviles */
 @media (max-width: 768px) {
+  .main-container {
+    margin-top: 120px;
+  }
   .titulo-inmobiliaria {
     font-size: 28px;
   }
