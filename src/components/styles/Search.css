@@ -1,0 +1,206 @@
+/* Contenedor principal con separación desde el header */
+.search-container {
+  padding: 100px;
+  margin: 50px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f3f3f3;
+}
+
+/* Título con fondo y padding, fondo centrado, texto alineado a la izquierda */
+.search-title {
+  background-color: #e0f0ff;
+  padding: 15px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Input de búsqueda estilizado */
+.search-input {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: 600px;
+  outline: none;
+}
+
+/* Carrusel y cards */
+.carrusel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px;
+  scrollbar-width: none; /* Firefox */
+}
+.carrusel::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+.card-propiedad {
+  min-width: 300px;
+  max-width: 300px;
+  flex-shrink: 0;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.card-propiedad h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.img-propiedad {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.iconos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tags .tipo,
+.tags .estado {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.tags .tipo {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.tags .estado {
+  background-color: #dfffe0;
+  color: #056305;
+}
+
+/* Ciudad y canon separados por espacio */
+.info-ciudad-canon {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.ciudad {
+  font-weight: 500;
+}
+
+.canon {
+  font-weight: 700;
+  color: #1e88e5;
+}
+
+/* Botón Ver más estilizado */
+.btn-detalle {
+  margin-top: auto;
+  padding: 8px 12px;
+  border: none;
+  background-color: #1e88e5;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.btn-detalle:hover {
+  background-color: #1565c0;
+}
+
+/* Detalle desplegable */
+.detalle {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #333;
+  overflow-y: auto; /* Scroll vertical cuando el contenido es muy largo */
+  max-height: 150px; /* Altura máxima antes de mostrar scroll */
+  padding-right: 5px; /* Espacio para el scroll */
+}
+
+.detalle::-webkit-scrollbar {
+  width: 5px;
+}
+.detalle::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.detalle::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+.detalle::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Botones de scroll del carrusel */
+.btn-carrusel {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.btn-carrusel.left {
+  left: -10px;
+}
+.btn-carrusel.right {
+  right: -10px;
+}
+
+/* Mensaje sin resultados */
+.no-resultados {
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+  margin-top: 30px;
+}

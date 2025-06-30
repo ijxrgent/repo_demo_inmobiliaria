@@ -1,0 +1,41 @@
+.main-container {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.titulo-inmobiliaria {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 25px;
+}
+
+.nombre-empresa {
+  font-size: 47px;
+  color: #4bb54b;
+  margin-top: 35px;
+}
+
+.mensaje-servicio {
+  font-size: 28px;
+  color: #fff;
+  margin-top: 25px;
+}
+
+.iconos-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 24px;
+}
+
+.iconos-sociales a {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.iconos-sociales a:hover {
+  color: #508150;
+}

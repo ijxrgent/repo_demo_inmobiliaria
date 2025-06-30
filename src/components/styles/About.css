@@ -1,0 +1,86 @@
+.about-us {
+  padding: 60px 30px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  background-image: url('/casa_costera.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; /* Esto hace que la imagen cubra todo el área */
+  background-attachment: fixed; /* Opcional: fija la imagen al hacer scroll */
+  margin: 0; /* Elimina los márgenes por defecto del body */
+  position: relative;
+}
+
+.about-us::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* semitransparente */
+  z-index: 1;
+}
+
+.about-us h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 auto 40px;
+  color: #fff;
+  background-color: #468747;
+  padding: 8px 12px;
+  width: 600px;
+  border-radius: 7px;
+}
+
+.our-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  text-align: left;
+}
+
+.our-info-grid,
+.about-us h2 {
+  position: relative;
+  z-index: 2;
+}
+
+.our-info-section {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.our-info-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #65a066;
+}
+
+.our-info-section ul {
+  padding-left: 20px;
+  list-style: disc;
+  color: #ddd;
+}
+
+.our-info-section strong {
+  display: block;
+  margin-bottom: 12px;
+  color: #ddd;
+  font-weight: 500;
+}
+
+.icono-section {
+  font-size: 1.5rem;
+  color: #468747;
+}
+
+@media (max-width: 768px) {
+  .our-info-grid {
+    grid-template-columns: 1fr;
+  }
+}

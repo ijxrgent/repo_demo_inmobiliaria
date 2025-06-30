@@ -1,0 +1,173 @@
+/* Requisitos.css */
+
+/* Contenedor principal - fondo difuminado */
+.requisitos-container {
+  background-image: url('/img_main.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding-top: 10px;
+  min-height: calc(100vh);
+}
+
+/* Capa semitransparente */
+.requisitos-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* Contenido principal */
+.requisitos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+  color: #fff; /* Texto blanco por defecto */
+}
+
+/* Asegurar que el header se mantenga visible */
+.menu-header {
+  position: relative;
+  z-index: 3;
+  background-color: #ededed; /* Fondo sólido para el header */
+}
+
+/* Estilos para títulos */
+.requisitos h1,
+.requisitos h2 {
+  color: #fff;
+  text-align: center;
+  background-color: #468747;
+  padding: 10px 15px;
+  border-radius: 7px;
+  margin-bottom: 1.5rem;
+}
+
+.requisitos h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.requisitos h2 {
+  font-size: 2rem;
+}
+
+/* Líneas divisorias */
+.requisitos hr {
+  border: none;
+  height: 2px;
+  background-color: #639f63;
+  margin: 1.5rem auto;
+  width: 80%;
+  opacity: 0.5;
+}
+
+/* Contenedor de formularios */
+.from-container {
+  background-color: rgba(248, 249, 250, 0.9);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #333; /* Texto oscuro para contraste */
+}
+
+/* Sección de documentos */
+.about-documents {
+  display: flex;
+  gap: 2rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.employee-doc,
+.independient-doc,
+.documents_of_legal_entities {
+  flex: 1;
+  min-width: 300px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #333; /* Texto oscuro para contraste */
+}
+
+.employee-doc:hover,
+.independient-doc:hover,
+.documents_of_legal_entities:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Subtítulos de secciones */
+.about-documents p,
+.documents_of_legal_entities p {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #639f63;
+  color: #639f63;
+  text-align: center;
+}
+
+/* Listas personalizadas */
+.custom-list {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.6;
+}
+
+.custom-list li {
+  margin-bottom: 1rem;
+  padding-left: 1.8rem;
+  position: relative;
+}
+
+.custom-list li::before {
+  content: '▶';
+  color: #639f63;
+  position: absolute;
+  left: 0;
+  font-size: 0.9rem;
+}
+.notes {
+  max-width: 670px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .requisitos-container {
+    padding-top: 140px; /* Ajuste para móviles */
+    min-height: calc(100vh - 140px);
+  }
+
+  .about-documents {
+    flex-direction: column;
+  }
+
+  .requisitos {
+    padding: 1rem;
+  }
+
+  .requisitos h1 {
+    font-size: 1.8rem;
+  }
+
+  .requisitos h2 {
+    font-size: 1.5rem;
+  }
+}
